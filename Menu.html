@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menu - Brewed</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            /* background-color: #333; */
+            padding: 1rem 0;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            justify-content: end;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        .nav-heading {
+            font-weight: bold;
+            color: #ff0000;
+            font-size: 2rem;
+            margin-right: auto;
+            margin-left: 20px;
+            cursor: default;
+        }
+        .navbar li {
+            list-style: none;
+        }
+        .navbar a {
+            color: rgb(255, 52, 1);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+            color: rgb(141, 81, 59);
+        }
+
+        /* OUR MENU heading */
+        .OUR-MENU {
+            font-size: 60px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            word-spacing: 20px;
+            margin: 50px 0 30px;
+            transition: color 0.5s ease;
+        }
+        .OUR-MENU:hover {
+            color: rgb(141, 81, 59);
+        }
+
+        /* Menu image styling */
+        .menu img {
+            width: 60vw;
+            max-width: 700px;
+            display: block;
+            margin: 0 auto 50px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .menu img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .OUR-MENU {
+                font-size: 45px;
+                word-spacing: 10px;
+            }
+            .menu img {
+                width: 80vw;
+            }
+        }
+        @media (max-width: 600px) {
+            .OUR-MENU {
+                font-size: 35px;
+                word-spacing: 5px;
+            }
+            .menu img {
+                width: 90vw;
+            }
+            .navbar ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .nav-heading {
+                margin: 0 0 10px 0;
+            }
+        }
+        @media (max-width: 400px) {
+            .OUR-MENU {
+                font-size: 28px;
+                word-spacing: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-heading">Brewed</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="OUR-MENU">OUR MENU</div>
+    <div class="menu">
+        <img
+            src="https://media.istockphoto.com/id/1192341556/vector/coffee-drinks-menu-price-list-vector-template.jpg?s=612x612&w=0&k=20&c=DAihlfbkoNAo_r49V73yiuSJJo9s7hmfxtvZkZReP9Y="
+            alt="Coffee Drinks Menu"
+        />
+    </div>
+</body>
+</html>
